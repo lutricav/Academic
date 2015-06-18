@@ -1,0 +1,398 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.violencia_sexual.v1
+
+concept
+	[at0000]	-- Violencia sexual
+language
+	original_language = <[ISO_639-1::pt]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["pt"] = <
+			language = <[ISO_639-1::pt]>
+			purpose = <"Consiste em todo ato ou jogo sexual, relação heterossexual ou homossexual cujo agressor está em estágio de desenvolvimento psicossexual mais adiantado que a criança ou o adolescente. Tem por intenção estimulá-la sexualmente ou utilizá-la para obter satisfação sexual. Apresenta-se sobre a forma de práticas eróticas e sexuais impostas à criança ou ao adolescente pela violência física, ameaças ou indução de sua vontade. Esse fenômeno violento pode variar desde atos em que não se produz o contato sexual (voyerismo, exibicionismo,  produção de fotos), até diferentes tipos de ações que incluem contato sexual sem ou com penetração. Engloba ainda a situação de exploração sexual visando lucros como é o caso da prostituição e da pornografia.">
+			use = <"A notificação é realizada em casos suspeitos. O ato de notificar inicia um processo que visa a interromper as atitudes e comportamentos violentos no âmbito da família e por parte de qualquer agressor. Deve ser realizada pelo profissional de saúde ou outro que tenha acesso à criança, como educadores. ">
+			keywords = <"Registros Eletrônicos de Saúde", "Notificação Compulsória", "Maus-Tratos Infantis">
+			misuse = <"A subnotificação poderia aqui ser considerada como um mau uso. Pois na ausência de notificação, além de o profissional de saúde estar infringindo o previsto em lei que o responsabiliza a notificar casos suspeitos de maus tratos, ele ainda estaria impossibilitando que a criança ou adolescente receba atenção especializada.">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"AuthorDraft">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"0B1CD9FC364736F9605342EC5F033806">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Violencia sexual
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0004] occurrences matches {0..1} matches {	-- Se ocorreu violência sexual, qual o tipo?
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0006] occurrences matches {0..1} matches {	-- Assédio sexual
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0007, 	-- 1 - Sim
+															at0008, 	-- 2 - Não
+															at0009, 	-- 3 - Não se aplica
+															at0010]	-- 9 - Ignorado
+														}
+													}
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {	-- Estupro
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0028, 	-- 1- Sim
+															at0029, 	-- 2- Não
+															at0030, 	-- 3- Não se aplica
+															at0031]	-- 9- Ignorado
+														}
+													}
+												}
+											}
+											ELEMENT[at0052] occurrences matches {0..1} matches {	-- Atentado violento ao pudor
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0053, 	-- 1- Sim
+															at0054, 	-- 2- Não
+															at0055, 	-- 3- Não se aplica
+															at0056]	-- 9- Ignorado
+														}
+													}
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {	-- Pornografia infantil
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0032, 	-- 1- Sim
+															at0033, 	-- 2- Não
+															at0034, 	-- 3- Não se aplica
+															at0035]	-- 9- Ignorado
+														}
+													}
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {	-- Exploração sexual
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0036, 	-- 1- Sim
+															at0037, 	-- 2- Não
+															at0038, 	-- 3- Não se aplica
+															at0039]	-- 9- Ignorado
+														}
+													}
+												}
+											}
+											CLUSTER[at0015] occurrences matches {0..1} matches {	-- Outros
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0016] occurrences matches {0..1} matches {	-- Outro
+														value matches {
+															DV_CODED_TEXT matches {
+																defining_code matches {
+																	[local::
+																	at0017, 	-- 1 - Sim
+																	at0018, 	-- 2 - Não
+																	at0019, 	-- 3 - Não se aplica
+																	at0020]	-- 9 - Ignorado
+																}
+															}
+														}
+													}
+													ELEMENT[at0021] occurrences matches {0..1} matches {	-- Especificar
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0005] occurrences matches {0..1} matches {	-- Se ocorreu penetração, qual o tipo? 
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0022] occurrences matches {0..1} matches {	-- Oral
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0040, 	-- 1- Sim
+															at0041, 	-- 2- Não
+															at0042, 	-- 3- Não se aplica
+															at0043]	-- 4- Ignorado
+														}
+													}
+												}
+											}
+											ELEMENT[at0023] occurrences matches {0..1} matches {	-- Anal
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0044, 	-- 1- Sim
+															at0045, 	-- 2- Não
+															at0046, 	-- 3- Não se aplica
+															at0047]	-- 9- Ignorado
+														}
+													}
+												}
+											}
+											ELEMENT[at0024] occurrences matches {0..1} matches {	-- Vaginal
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0048, 	-- 1- Sim
+															at0049, 	-- 2- Não
+															at0050, 	-- 3- Não se aplica
+															at0051]	-- 9- Ignorado
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"Violencia sexual">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Se ocorreu violência sexual, qual o tipo?">
+					description = <"*Ato ou jogo sexual, cujo agressor está em estágio de desenvolvimento psicossexual mais adiantado que a criança ou o adolescente e que tem por intenção estimulá-la sexualmente ou utilizá-la para obter satisfação sexual ">
+				>
+				["at0005"] = <
+					text = <"Se ocorreu penetração, qual o tipo? ">
+					description = <"*Consiste no ato sexual de inocular o pênis dentro de orifício para obtenção de prazer sexual">
+				>
+				["at0006"] = <
+					text = <"Assédio sexual">
+					description = <"*Todo comportamento indesejado de caráter sexual, sob forma verbal, não verbal ou física, com o objetivo ou o efeito de perturbar ou constranger a pessoa, afetar a sua dignidade, ou de lhe criar um ambiente intimidativo, hostil, degradante, humilhante ou desestabilizador.">
+				>
+				["at0007"] = <
+					text = <"1 - Sim">
+					description = <"Presença de assédio sexual">
+				>
+				["at0008"] = <
+					text = <"2 - Não">
+					description = <"Ausência de assédio sexual">
+				>
+				["at0009"] = <
+					text = <"3 - Não se aplica">
+					description = <"Não se aplica assédio sexual">
+				>
+				["at0010"] = <
+					text = <"9 - Ignorado">
+					description = <"Assédio sexual ignorado">
+				>
+				["at0011"] = <
+					text = <"Estupro">
+					description = <"*Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso.">
+				>
+				["at0012"] = <
+					text = <"Pornografia infantil">
+					description = <"* Material de áudio ou visual que use crianças em um contexto sexual ou submeter crianças e adolescentes a assistir materiais áudio ou visual com conteúdo sexual incompatível ao seu desenvolvimento psicossexual">
+				>
+				["at0013"] = <
+					text = <"Exploração sexual">
+					description = <"* Consiste na utilização de crianças e adolescentes em atividades sexuais remuneradas, como a exploração no comércio do sexo, a pornografia infantil ou a exibição em espetáculos sexuais públicos ou privados">
+				>
+				["at0015"] = <
+					text = <"Outros">
+					description = <"*Outros tipos de violência sexual que não se encaixam em nenhum dos campos já mencionados">
+				>
+				["at0016"] = <
+					text = <"Outro">
+					description = <"*Outros tipos de violência sexual que não inclua: assédio sexual, estupro ou atentado violento ao pudor, pornografia infantil e exploração sexual">
+				>
+				["at0017"] = <
+					text = <"1 - Sim">
+					description = <"Presença de outra violência sexual">
+				>
+				["at0018"] = <
+					text = <"2 - Não">
+					description = <"Ausência de outra violência sexual">
+				>
+				["at0019"] = <
+					text = <"3 - Não se aplica">
+					description = <"Não se aplica outra violência sexual">
+				>
+				["at0020"] = <
+					text = <"9 - Ignorado">
+					description = <"Outra violência sexual ignorada ">
+				>
+				["at0021"] = <
+					text = <"Especificar">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Oral">
+					description = <"*Inoculação do pênis pela boca">
+				>
+				["at0023"] = <
+					text = <"Anal">
+					description = <"*Inoculação do pênis pelo ânus">
+				>
+				["at0024"] = <
+					text = <"Vaginal">
+					description = <"*Inoculação do pênis pela vagina">
+				>
+				["at0028"] = <
+					text = <"1- Sim">
+					description = <"Presença de estupro">
+				>
+				["at0029"] = <
+					text = <"2- Não">
+					description = <"Ausência de estupro">
+				>
+				["at0030"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica estupro">
+				>
+				["at0031"] = <
+					text = <"9- Ignorado">
+					description = <"Estupro ignorado">
+				>
+				["at0032"] = <
+					text = <"1- Sim">
+					description = <"Presença de pornografia infantil">
+				>
+				["at0033"] = <
+					text = <"2- Não">
+					description = <"Ausência de pornografia infantil">
+				>
+				["at0034"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica pornografia infantil">
+				>
+				["at0035"] = <
+					text = <"9- Ignorado">
+					description = <"Pornografia infantil ignorado">
+				>
+				["at0036"] = <
+					text = <"1- Sim">
+					description = <"Presença de exploração sexual">
+				>
+				["at0037"] = <
+					text = <"2- Não">
+					description = <"Ausência de exploração sexual">
+				>
+				["at0038"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica exploração sexual">
+				>
+				["at0039"] = <
+					text = <"9- Ignorado">
+					description = <"Exploração sexual ignorado">
+				>
+				["at0040"] = <
+					text = <"1- Sim">
+					description = <"Presença de penetração oral">
+				>
+				["at0041"] = <
+					text = <"2- Não">
+					description = <"Ausência de penetração oral">
+				>
+				["at0042"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica penetração oral">
+				>
+				["at0043"] = <
+					text = <"4- Ignorado">
+					description = <"Penetração oral ignorada">
+				>
+				["at0044"] = <
+					text = <"1- Sim">
+					description = <"Presença de penetração anal">
+				>
+				["at0045"] = <
+					text = <"2- Não">
+					description = <"Ausência de penetração anal">
+				>
+				["at0046"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica penetração anal">
+				>
+				["at0047"] = <
+					text = <"9- Ignorado">
+					description = <"Penetração anal ignorada">
+				>
+				["at0048"] = <
+					text = <"1- Sim">
+					description = <"Presença de penetração vaginal">
+				>
+				["at0049"] = <
+					text = <"2- Não">
+					description = <"Ausência de penetração vaginal">
+				>
+				["at0050"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica penetração vaginal">
+				>
+				["at0051"] = <
+					text = <"9- Ignorado">
+					description = <"Penetração vaginal ignorada">
+				>
+				["at0052"] = <
+					text = <"Atentado violento ao pudor">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"1- Sim">
+					description = <"Presença de atentado violento ao pudor">
+				>
+				["at0054"] = <
+					text = <"2- Não">
+					description = <"Ausência de atentado violento ao pudor">
+				>
+				["at0055"] = <
+					text = <"3- Não se aplica">
+					description = <"Não se aplica atentado violento ao pudor">
+				>
+				["at0056"] = <
+					text = <"9- Ignorado">
+					description = <"Atentado violento ao pudor ignorado">
+				>
+			>
+		>
+	>
