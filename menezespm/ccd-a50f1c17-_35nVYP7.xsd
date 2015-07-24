@@ -1,0 +1,2989 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='ccd-description.xsl'?>
+<xs:schema  xmlns:xs='http://www.w3.org/2001/XMLSchema'
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:owl='http://www.w3.org/2002/07/owl#'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  xmlns:sawsdl='http://www.w3.org/ns/sawsdl'
+  xmlns:sawsdlrdf='http://www.w3.org/ns/sawsdl#'
+  xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'
+  xmlns:vc='http://www.w3.org/2007/XMLSchema-versioning'
+  xmlns:mlhim2='http://www.mlhim.org/xmlns/mlhim2'
+  targetNamespace='http://www.mlhim.org/xmlns/mlhim2'
+  vc:minVersion='1.1'
+xml:lang='en-US'>
+
+  <!-- Include the Reference Model -->
+  <xs:include schemaLocation='http://www.mlhim.org/xmlns/mlhim2/mlhim247.xsd'/>
+
+  <!-- METADATA Section -->
+  <xs:annotation>
+    <xs:appinfo>
+    <rdf:RDF>
+    <rdf:Description rdf:about='http://www.ccdgen.com/ccdlib/ccd-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf.xsd'>
+      <dc:title>Pre-Hospital Trauma Life Support (PHTLS)</dc:title>
+      <dc:creator>Pedro Monteiro Menezes pedromonteiro@gmail.com</dc:creator>
+      <dc:contributor>Luciana Tricai Cavalini  lutricav@mlhim.org</dc:contributor>
+      <dc:subject>Prehospital Life Support; Trauma; Emergency Medical Services;Life Support Care;Civil Defense;Civil Defense</dc:subject>
+      <dc:source>http://www.jblearning.com/catalog/9781284096378/</dc:source>
+      <dc:rights>CC-BY http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:relation>None</dc:relation>
+      <dc:coverage>Universal</dc:coverage>
+      <dc:type>MLHIM Concept Constraint Definition (CCD)</dc:type>
+      <dc:identifier>ccd-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf</dc:identifier>
+      <dc:description>
+        Modeling of the concepts related to the ABCDE itens of the Pre-Hospital Trauma Life Support (PHTLS)
+        This CCD was created by the CCD-Gen application.
+      </dc:description>
+      <dc:publisher>Multilevel Healthcare Information Modeling Laboratory (LA-MLHIM)</dc:publisher>
+      <dc:date>2015-06-01 19:19:42.927195+00:00</dc:date>
+      <dc:format>text/xml</dc:format>
+      <dc:language>en-US</dc:language>
+    </rdf:Description>
+  <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf'>
+  <rdfs:subClassOf rdf:resource='mlhim2:CCDType'/>
+  <rdfs:label>Pre-Hospital Trauma Life Support (PHTLS)</rdfs:label>
+  </rdf:Description>
+    </rdf:RDF>
+    </xs:appinfo>
+  </xs:annotation>
+
+  <!-- CCD Root Element -->
+  <xs:element name='ccd-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf' type='mlhim2:ct-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf'/>
+  <xs:complexType name='ct-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf'> <!-- Pre-Hospital Trauma Life Support (PHTLS) -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:CCDType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-f4d9b375-a230-4904-9a56-2079f1c11540'/> <!-- definition -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+    <!-- CCD Components Begin Below -->
+
+  <xs:complexType name='ct-f4d9b375-a230-4904-9a56-2079f1c11540'> <!-- Pre-Hospital Trauma Life Support (PHTLS) -->
+    <xs:annotation>
+    <xs:documentation>
+      ABCDE itens of the Pre-Hospital Trauma Life Support protocol
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-f4d9b375-a230-4904-9a56-2079f1c11540'>
+    <rdfs:subClassOf rdf:resource='mlhim2:CareEntryType'/>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:CareEntryType'>
+        <xs:sequence>
+          <xs:element maxOccurs='unbounded' minOccurs='0' ref='mlhim2:entry-links'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:entry-audit'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='language' type='xs:language' fixed='en-US'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='encoding' type='xs:string' fixed='utf-8'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-a7e60b40-1818-4781-9228-bf6b4ab20480'/> <!-- entry-subject -->
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-0cc01616-7adc-400e-8f90-3fb8b436560c'/> <!-- entry-provider -->
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:other-participations'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:protocol-id'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='current-state' type='xs:string' default=''/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:workflow-id'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:attestation'/>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-e2d44d11-1841-4f3a-84b5-4f660fc14f89'/> <!-- entry-data -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-a7e60b40-1818-4781-9228-bf6b4ab20480' xml:lang='en-US'> <!-- Subject of the Entry (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      A generic Entry provider.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-a7e60b40-1818-4781-9228-bf6b4ab20480'>
+    <rdfs:subClassOf rdf:resource='mlhim2:PartyType'/>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.mlhim.org/generic_pcts'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:PartyType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='party-name' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-c73b99d9-d7d3-4469-9bd9-4a624a228d12'/> <!-- external-ref -->
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-ca067d0c-5fe1-4661-b43c-d1fded01d074'/> <!-- details -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-c73b99d9-d7d3-4469-9bd9-4a624a228d12' xml:lang='en-US'> <!-- External Reference for Party -->
+    <xs:annotation>
+    <xs:documentation>
+      A generic URI for use with Party to be used as a pointer to a demographic service record.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-c73b99d9-d7d3-4469-9bd9-4a624a228d12'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvURIType'/>
+    <rdfs:label>External Reference for Party</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.mlhim.org/generic_pcts'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvURIType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="External Reference for Party"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvURI-dv' type='xs:anyURI'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='relation' type='xs:string' fixed='Party Associated with the record'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-ca067d0c-5fe1-4661-b43c-d1fded01d074'> <!-- Address Details (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      Generic Details cluster with address elements.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-ca067d0c-5fe1-4661-b43c-d1fded01d074'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Address Details (US)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//pe.usps.gov/cpim/ftp/pubs/Pub28/pub28.pdf'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Address Details (US)"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-d24affc1-a9ff-487a-9029-204f3b4d8e7e'/><!-- DvString Additional Address Line(s) (US)  -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-b65ea20c-3768-45cd-a059-004ece61bc89'/><!-- DvString City Name (US) -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-2bb59f5a-223e-4b8e-b63f-ed8beb62849e'/><!-- DvString State Abbreviation (US) -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f'/><!-- DvString Street Number and Name (US) -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-c64b7604-6189-412d-bb70-48baba85f366'/><!-- DvString Zip Code (US) -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name='ct-a85b79c1-3d4b-4935-ba06-2232af9ba81e' xml:lang='en-US'> <!-- Additional Address Line(s) (US)  -->
+    <xs:annotation>
+    <xs:documentation>
+      Used for additional address lines in the US such as building name or apartment number.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-a85b79c1-3d4b-4935-ba06-2232af9ba81e'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Additional Address Line(s) (US)</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//pe.usps.gov/cpim/ftp/pubs/Pub28/pub28.pdf'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Additional Address Line(s) (US)"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-d24affc1-a9ff-487a-9029-204f3b4d8e7e' substitutionGroup='mlhim2:items' type='mlhim2:ct-d24affc1-a9ff-487a-9029-204f3b4d8e7e'/>
+  <xs:complexType name='ct-d24affc1-a9ff-487a-9029-204f3b4d8e7e'> <!-- Adapter for: Additional Address Line(s) (US)  -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-a85b79c1-3d4b-4935-ba06-2232af9ba81e'/> <!-- Reference to: Additional Address Line(s) (US)  -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-443dda9d-fe1b-47a5-a506-cb4b96f137eb' xml:lang='en-US'> <!-- City Name (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      Used in US address cluster for the City name.
+
+It is strongly recommended that addresses use only approved Last Line (city)
+names as described in the Postal Service City State file currently in effect.
+City names with the City State Mailing Name indicator flag set to YES in the
+City State file are considered part of a complete and standardized address;
+city names with the flag set to NO in the City State file should not be used in
+a complete and standardized address. For a complete and standardized address, abbreviations for city or state names must be shown in the Postal
+Service City State file. If you are preparing prebarcoded mail, city names set
+to NO for mailing name can be used.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-443dda9d-fe1b-47a5-a506-cb4b96f137eb'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>City Name (US)</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//pe.usps.gov/cpim/ftp/pubs/Pub28/pub28.pdf'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="City Name (US)"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-b65ea20c-3768-45cd-a059-004ece61bc89' substitutionGroup='mlhim2:items' type='mlhim2:ct-b65ea20c-3768-45cd-a059-004ece61bc89'/>
+  <xs:complexType name='ct-b65ea20c-3768-45cd-a059-004ece61bc89'> <!-- Adapter for: City Name (US) -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-443dda9d-fe1b-47a5-a506-cb4b96f137eb'/> <!-- Reference to: City Name (US) -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-9226daaa-1143-4267-b715-b8fc09561154' xml:lang='en-US'> <!-- State Abbreviation (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      Used in US address cluster for two character US state abbreviation.
+Use the abbreviations below when addressing mail. Using the two-letter
+state abbreviations makes it possible to enter the city, state, and Five-Digit
+ZIP Code (or ZIP+4 Code) on the last line of the address within 28 positions
+when necessary: 13 positions for city, 1 space between the city and state
+abbreviation, 2 positions for the state, 2 spaces (preferred) between the state
+and ZIP Code, and 10 positions for the ZIP+4 Code.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>State Abbreviation (US)</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//pe.usps.gov/cpim/ftp/pubs/Pub28/pub28.pdf'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="State Abbreviation (US)"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='AL'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AL'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AL</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Alabama'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AK'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AK'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AK</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Alaska'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AS'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AS'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AS</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='American Samoa'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AZ'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AZ'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AZ</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Arizona'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AR'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AR'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AR</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Arkansas'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='CA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#CA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>CA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='California'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='CO'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#CO'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>CO</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Colorado'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='CT'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#CT'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>CT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Connecticut'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='DE'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#DE'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>DE</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Delaware'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='DC'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#DC'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>DC</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='District of Columbia'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='FM'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#FM'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>FM</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Federated States of Micronesia'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='FL'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#FL'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>FL</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Florida'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='GA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#GA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>GA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Georgia'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='GU'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#GU'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>GU</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Guam'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='HI'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#HI'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>HI</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Hawaii'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='ID'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#ID'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>ID</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Idaho'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='IL'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#IL'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>IL</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Illinois'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='IN'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#IN'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>IN</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Indiana'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='IA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#IA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>IA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Iowa'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='KS'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#KS'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>KS</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Kansas'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='KY'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#KY'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>KY</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Kentucky'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='LA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#LA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>LA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Louisiana'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='ME'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#ME'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>ME</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Maine'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MH'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MH'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MH</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Marshall Islands'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MD'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MD'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MD</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Maryland'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Massachusetts'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MI'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MI'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MI</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Michigan'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MN'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MN'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MN</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Minnesota'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MS'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MS'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MS</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Mississippi'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MO'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MO'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MO</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Missouri'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MT'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MT'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Montana'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NE'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NE'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NE</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Nebraska'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NV'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NV'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NV</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Nevada'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NH'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NH'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NH</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='New Hampshire'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NJ'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NJ'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NJ</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='New Jersey'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NM'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NM'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NM</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='New Mexico'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NY'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NY'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NY</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='New York'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='NC'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#NC'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>NC</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='North Carolina'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='ND'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#ND'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>ND</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='North Dakota'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='MP'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#MP'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>MP</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Northern Mariana Islands'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='CM'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#CM'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>CM</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Northern Mariana Islands'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='OH'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#OH'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>OH</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Ohio'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='OK'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#OK'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>OK</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Oklahoma'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='OR'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#OR'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>OR</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Oregon'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='PA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#PA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>PA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Pennsylvania'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='PR'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#PR'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>PR</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Puerto Rico'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='RI'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#RI'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>RI</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Rhode Island'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='SC'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#SC'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>SC</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='South Carolina'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='SD'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#SD'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>SD</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='South Dakota'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='TN'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#TN'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>TN</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Tennessee'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='TX'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#TX'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>TX</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Texas'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='TT'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#TT'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>TT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Trust Territory of the Pacific Islands'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='U.S. Armed Forces – Americas'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AE'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AE'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AE</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='U.S. Armed Forces – Europe'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='AP'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#AP'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>AP</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='U.S. Armed Forces – Pacific'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='UT'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#UT'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>UT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Utah'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='VT'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#VT'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>VT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Vermont'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='VI'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#VI'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>VI</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Virgin Islands'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='VA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#VA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>VA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Virginia'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='WA'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#WA'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>WA</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Washington'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='WV'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#WV'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>WV</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='West Virginia'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='WI'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#WI'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>WI</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Wisconsin'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='WY'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154#WY'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+      <rdfs:label>WY</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Wyoming'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-2bb59f5a-223e-4b8e-b63f-ed8beb62849e' substitutionGroup='mlhim2:items' type='mlhim2:ct-2bb59f5a-223e-4b8e-b63f-ed8beb62849e'/>
+  <xs:complexType name='ct-2bb59f5a-223e-4b8e-b63f-ed8beb62849e'> <!-- Adapter for: State Abbreviation (US) -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-9226daaa-1143-4267-b715-b8fc09561154'/> <!-- Reference to: State Abbreviation (US) -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-48c18185-97ed-4723-8a19-fb3ccf88f5df' xml:lang='en-US'> <!-- Street Number and Name (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      A single line US Street number and name. The typical format is:
+123 Main St. 
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-48c18185-97ed-4723-8a19-fb3ccf88f5df'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Street Number and Name (US)</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//pe.usps.gov/cpim/ftp/pubs/Pub28/pub28.pdf'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Street Number and Name (US)"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f' substitutionGroup='mlhim2:items' type='mlhim2:ct-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f'/>
+  <xs:complexType name='ct-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f'> <!-- Adapter for: Street Number and Name (US) -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-48c18185-97ed-4723-8a19-fb3ccf88f5df'/> <!-- Reference to: Street Number and Name (US) -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-21d8b9e0-fbe2-4210-adec-d795baf4fdd1' xml:lang='en-US'> <!-- Zip Code (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      Used in address cluster for US Zip (postal) Codes. Minimum of 5 characters with a maximum of 10 characters. Accommodates the older 5 character codes or the Zip+4 with the additional 4 characters following a dash. 
+
+Examples:
+12345
+12345-0987 
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-21d8b9e0-fbe2-4210-adec-d795baf4fdd1'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Zip Code (US)</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//pe.usps.gov/cpim/ftp/pubs/Pub28/pub28.pdf'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Zip Code (US)"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+          <xs:assert test="matches(DvString-dv, '^\d{5}([\-]?\d{4})?$')"/>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-c64b7604-6189-412d-bb70-48baba85f366' substitutionGroup='mlhim2:items' type='mlhim2:ct-c64b7604-6189-412d-bb70-48baba85f366'/>
+  <xs:complexType name='ct-c64b7604-6189-412d-bb70-48baba85f366'> <!-- Adapter for: Zip Code (US) -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-21d8b9e0-fbe2-4210-adec-d795baf4fdd1'/> <!-- Reference to: Zip Code (US) -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-0cc01616-7adc-400e-8f90-3fb8b436560c' xml:lang='en-US'> <!-- Entry Provider (US) -->
+    <xs:annotation>
+    <xs:documentation>
+      A generic Entry provider.
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-0cc01616-7adc-400e-8f90-3fb8b436560c'>
+    <rdfs:subClassOf rdf:resource='mlhim2:PartyType'/>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.mlhim.org/generic_pcts'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:PartyType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='party-name' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-c73b99d9-d7d3-4469-9bd9-4a624a228d12'/> <!-- external-ref -->
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-ca067d0c-5fe1-4661-b43c-d1fded01d074'/> <!-- details -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-e2d44d11-1841-4f3a-84b5-4f660fc14f89'> <!-- PHTLS -->
+    <xs:annotation>
+    <xs:documentation>
+      ABCDE itens of the Pre-Hospital Trauma Life Support protocol
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-e2d44d11-1841-4f3a-84b5-4f660fc14f89'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>PHTLS</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="PHTLS"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-011d5651-c492-4a6a-b79e-df5dfdce18f4'/><!-- Cluster Breathing -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-5d546138-6707-4d5c-8a30-8d13f6669c55'/><!-- Cluster Circulation -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-51cc78ed-08ca-4b35-a090-47428ed0b1eb'/><!-- Cluster Disability -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-9047320a-b279-49c3-914c-082103780f3f'/><!-- Cluster HL7/MLHIM Mapping -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-7f183683-e2c7-4c3d-b21a-03a08448dab8'/><!-- DvBoolean Airway obstruction -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-d9dda3b5-784f-42cf-a98b-64b2241dc82b'/><!-- DvString Exposure -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-011d5651-c492-4a6a-b79e-df5dfdce18f4'> <!-- Breathing -->
+    <xs:annotation>
+    <xs:documentation>
+      Item B of Pre-Hospital Trauma Life Support (PHTLS): Checking breathing or respiratory rate
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-011d5651-c492-4a6a-b79e-df5dfdce18f4'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Breathing</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Breathing"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-6b65e41b-ac80-46d3-b5d8-10058440616c'/><!-- DvOrdinal Breathing -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-9d162006-197c-4950-8770-3143dc9ebea2'/><!-- DvCount Respiratory Rate -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-51f0cf8a-96b8-4b4e-a026-df1591b42b2a' xml:lang='en-US'> <!-- Breathing -->
+    <xs:annotation>
+      <xs:documentation>
+      Item B of Pre-Hospital Trauma Life Support (PHTLS): Checking breathing
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-51f0cf8a-96b8-4b4e-a026-df1591b42b2a'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Breathing</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Breathing"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default='Normal'/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='1'/>
+                <xs:enumeration value='2'/>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='4'/>
+                <xs:enumeration value='5'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Apneic'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Slow'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Normal'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Fast'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Abnormally fast'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-6b65e41b-ac80-46d3-b5d8-10058440616c' substitutionGroup='mlhim2:items' type='mlhim2:ct-6b65e41b-ac80-46d3-b5d8-10058440616c'/>
+  <xs:complexType name='ct-6b65e41b-ac80-46d3-b5d8-10058440616c'> <!-- Adapter for: Breathing -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-51f0cf8a-96b8-4b4e-a026-df1591b42b2a'/> <!-- Reference to: Breathing -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-ab72c7d9-843b-47ce-883a-f6da2e6c5a80' xml:lang='en-US'> <!-- Respiratory Rate -->
+    <xs:annotation>
+      <xs:documentation>
+      Item B of Pre-Hospital Trauma Life Support (PHTLS): Checking respiratory rate
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-ab72c7d9-843b-47ce-883a-f6da2e6c5a80'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvCountType'/>
+    <rdfs:label>Respiratory Rate</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvCountType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Respiratory Rate"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+          <xs:element maxOccurs='1' minOccurs='1'  name='magnitude'>
+            <xs:simpleType>
+            <xs:restriction base='xs:decimal'>
+              <xs:minInclusive value='0'/>
+              <xs:maxInclusive value='500'/>
+            </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:magnitude-status'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='error'  type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='accuracy' type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-1fded923-76c3-446a-99db-94c9ea528855'/> <!-- DvCount-units -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name='ct-1fded923-76c3-446a-99db-94c9ea528855' xml:lang='en-US'> <!-- Breaths per minute -->
+    <xs:annotation>
+    <xs:documentation>
+      Breaths per minute
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-1fded923-76c3-446a-99db-94c9ea528855'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Breaths per minute</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//en.wikipedia.org/wiki/Respiratory_rate'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Breaths per minute"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='bpm'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-1fded923-76c3-446a-99db-94c9ea528855#bpm'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-1fded923-76c3-446a-99db-94c9ea528855'/>
+      <rdfs:label>bpm</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://en.wikipedia.org/wiki/Respiratory_rate'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-9d162006-197c-4950-8770-3143dc9ebea2' substitutionGroup='mlhim2:items' type='mlhim2:ct-9d162006-197c-4950-8770-3143dc9ebea2'/>
+  <xs:complexType name='ct-9d162006-197c-4950-8770-3143dc9ebea2'> <!-- Adapter for: Respiratory Rate -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-ab72c7d9-843b-47ce-883a-f6da2e6c5a80'/> <!-- Reference to: Respiratory Rate -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-5d546138-6707-4d5c-8a30-8d13f6669c55'> <!-- Circulation -->
+    <xs:annotation>
+    <xs:documentation>
+      Circulation parameters from PHTLS
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-5d546138-6707-4d5c-8a30-8d13f6669c55'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Circulation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Circulation"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-6fc41830-0f73-48f1-ae4c-4b730d57565b'/><!-- Cluster Blood pressure -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-1e854154-fa52-48e6-8999-bef8e17c05c7'/><!-- Cluster Pulse -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-2cf2bc6d-dfd4-43e3-b947-506aec452b35'/><!-- Cluster Skin -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-214413d9-1516-4f31-bc60-dc92f9c9142a'/><!-- DvString Bleeding -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-6fc41830-0f73-48f1-ae4c-4b730d57565b'> <!-- Blood pressure -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking systolic and diastolic blood pressure
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-6fc41830-0f73-48f1-ae4c-4b730d57565b'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Blood pressure</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Blood pressure"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-67c93c32-9760-495d-9030-1fec3da18e40'/><!-- DvQuantity Diastolic blood pressure -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-0e73829a-b765-4891-b388-a5ca928c8162'/><!-- DvQuantity Systolic blood pressure -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-c69a1ab9-7699-4a30-b282-9e26b0218e10' xml:lang='en-US'> <!-- Diastolic blood pressure -->
+    <xs:annotation>
+      <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking diastolic blood pressure
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-c69a1ab9-7699-4a30-b282-9e26b0218e10'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvQuantityType'/>
+    <rdfs:label>Diastolic blood pressure</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvQuantityType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Diastolic blood pressure"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+          <xs:element maxOccurs='1' minOccurs='1'  name='magnitude'>
+            <xs:simpleType>
+            <xs:restriction base='xs:decimal'>
+              <xs:minInclusive value='0'/>
+              <xs:maxInclusive value='2000'/>
+            </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:magnitude-status'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='error'  type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='accuracy' type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d'/> <!-- DvQuantity-units -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name='ct-8ab419ac-df3a-4d78-a40d-7a4d9c13535d' xml:lang='en-US'> <!-- mmHg -->
+    <xs:annotation>
+    <xs:documentation>
+      Millimeters of mercury (unit of measurement for blood pressure)
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-8ab419ac-df3a-4d78-a40d-7a4d9c13535d'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>mmHg</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//en.wikipedia.org/wiki/Millimeter_of_mercury'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="mmHg"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='mmHg'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-8ab419ac-df3a-4d78-a40d-7a4d9c13535d#mmHg'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-8ab419ac-df3a-4d78-a40d-7a4d9c13535d'/>
+      <rdfs:label>mmHg</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='mmHg'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-67c93c32-9760-495d-9030-1fec3da18e40' substitutionGroup='mlhim2:items' type='mlhim2:ct-67c93c32-9760-495d-9030-1fec3da18e40'/>
+  <xs:complexType name='ct-67c93c32-9760-495d-9030-1fec3da18e40'> <!-- Adapter for: Diastolic blood pressure -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-c69a1ab9-7699-4a30-b282-9e26b0218e10'/> <!-- Reference to: Diastolic blood pressure -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-9da16c03-0990-4d88-85fd-28441a8458e8' xml:lang='en-US'> <!-- Systolic blood pressure -->
+    <xs:annotation>
+      <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking systolic blood pressure
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-9da16c03-0990-4d88-85fd-28441a8458e8'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvQuantityType'/>
+    <rdfs:label>Systolic blood pressure</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvQuantityType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Systolic blood pressure"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+          <xs:element maxOccurs='1' minOccurs='1'  name='magnitude'>
+            <xs:simpleType>
+            <xs:restriction base='xs:decimal'>
+              <xs:minInclusive value='0'/>
+              <xs:maxInclusive value='2000'/>
+            </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:magnitude-status'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='error'  type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='accuracy' type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d'/> <!-- DvQuantity-units -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-0e73829a-b765-4891-b388-a5ca928c8162' substitutionGroup='mlhim2:items' type='mlhim2:ct-0e73829a-b765-4891-b388-a5ca928c8162'/>
+  <xs:complexType name='ct-0e73829a-b765-4891-b388-a5ca928c8162'> <!-- Adapter for: Systolic blood pressure -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-9da16c03-0990-4d88-85fd-28441a8458e8'/> <!-- Reference to: Systolic blood pressure -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-1e854154-fa52-48e6-8999-bef8e17c05c7'> <!-- Pulse -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking pulse
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-1e854154-fa52-48e6-8999-bef8e17c05c7'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Pulse</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Pulse"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-312c62aa-666b-4502-865f-3ddc2c5be85a'/><!-- DvBoolean Arrhythmia -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-cff7cefd-2201-4825-a80d-c26b0717c3ae'/><!-- DvOrdinal Pulse perception -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-5f1c355b-bdc1-4a4f-bc5d-c3b9d58fb3a5'/><!-- DvCount Pulse Rate -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4' xml:lang='en-US'> <!-- Arrhythmia -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C do Pre-Hospital Trauma Life Support (PHTLS): Checking arrhythmia
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvBooleanType'/>
+    <rdfs:label>Arrhythmia</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvBooleanType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Arrhythmia"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:choice>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-true'>
+            <xs:simpleType>
+              <xs:restriction base='xs:string'>
+                  <xs:enumeration value='YES'/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-false'>
+            <xs:simpleType>
+              <xs:restriction base='xs:string'>
+                  <xs:enumeration value='NO'/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          </xs:choice>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-312c62aa-666b-4502-865f-3ddc2c5be85a' substitutionGroup='mlhim2:items' type='mlhim2:ct-312c62aa-666b-4502-865f-3ddc2c5be85a'/>
+  <xs:complexType name='ct-312c62aa-666b-4502-865f-3ddc2c5be85a'> <!-- Adapter for: Arrhythmia -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4'/> <!-- Reference to: Arrhythmia -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-d0ad28f3-5c34-426e-b504-39f1b47d8a71' xml:lang='en-US'> <!-- Pulse perception -->
+    <xs:annotation>
+      <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Pulse perception (when it is not possible to measure) 
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-d0ad28f3-5c34-426e-b504-39f1b47d8a71'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Pulse perception</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Pulse perception"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='1'/>
+                <xs:enumeration value='2'/>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='4'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Imperceptible'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Slow'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Normal'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Accelerated'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-cff7cefd-2201-4825-a80d-c26b0717c3ae' substitutionGroup='mlhim2:items' type='mlhim2:ct-cff7cefd-2201-4825-a80d-c26b0717c3ae'/>
+  <xs:complexType name='ct-cff7cefd-2201-4825-a80d-c26b0717c3ae'> <!-- Adapter for: Pulse perception -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-d0ad28f3-5c34-426e-b504-39f1b47d8a71'/> <!-- Reference to: Pulse perception -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c' xml:lang='en-US'> <!-- Pulse Rate -->
+    <xs:annotation>
+      <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Pulse rate
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvCountType'/>
+    <rdfs:label>Pulse Rate</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvCountType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Pulse Rate"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+          <xs:element maxOccurs='1' minOccurs='1'  name='magnitude'>
+            <xs:simpleType>
+            <xs:restriction base='xs:decimal'>
+              <xs:minInclusive value='0'/>
+              <xs:maxInclusive value='1000'/>
+            </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:magnitude-status'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='error'  type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='accuracy' type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-84f32fe2-b8eb-4666-b714-71a07901bf97'/> <!-- DvCount-units -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name='ct-84f32fe2-b8eb-4666-b714-71a07901bf97' xml:lang='en-US'> <!-- Beats per minute -->
+    <xs:annotation>
+    <xs:documentation>
+      Beats per minute
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-84f32fe2-b8eb-4666-b714-71a07901bf97'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Beats per minute</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.heart.org/HEARTORG/Conditions/More/MyHeartandStrokeNews/All-About-Heart-Rate-Pulse_UCM_438850_Article.jsp'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Beats per minute"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='bpm'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-84f32fe2-b8eb-4666-b714-71a07901bf97#bpm'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-84f32fe2-b8eb-4666-b714-71a07901bf97'/>
+      <rdfs:label>bpm</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.heart.org/HEARTORG/Conditions/More/MyHeartandStrokeNews/All-About-Heart-Rate-Pulse_UCM_438850_Article.jsp'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-5f1c355b-bdc1-4a4f-bc5d-c3b9d58fb3a5' substitutionGroup='mlhim2:items' type='mlhim2:ct-5f1c355b-bdc1-4a4f-bc5d-c3b9d58fb3a5'/>
+  <xs:complexType name='ct-5f1c355b-bdc1-4a4f-bc5d-c3b9d58fb3a5'> <!-- Adapter for: Pulse Rate -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c'/> <!-- Reference to: Pulse Rate -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-2cf2bc6d-dfd4-43e3-b947-506aec452b35'> <!-- Skin -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking skin
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-2cf2bc6d-dfd4-43e3-b947-506aec452b35'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Skin</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Skin"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-028465a6-67a2-457a-a18a-be27bcfbc436'/><!-- Cluster Temperature -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-8b67e76a-f3df-4c69-9976-700e63547077'/><!-- DvString Capillary refill -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-aeec907a-ae3b-41c6-82d1-0ab760b20c71'/><!-- DvString Moist -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-a38946bf-83d9-477e-9ca8-0bc0a2f47dbb'/><!-- DvString Skin Color -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-028465a6-67a2-457a-a18a-be27bcfbc436'> <!-- Temperature -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking temperature
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-028465a6-67a2-457a-a18a-be27bcfbc436'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Temperature</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Temperature"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-98ab38e8-9d92-4b44-92cb-5ffa072d199e'/><!-- DvOrdinal Temperature -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-6dbc6e00-c1a6-4421-b4d6-98edc290569f'/><!-- DvQuantity Temperature -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-f99343aa-2674-4eb7-8711-7ba531e6b60d' xml:lang='en-US'> <!-- Temperature -->
+    <xs:annotation>
+      <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking temperature
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-f99343aa-2674-4eb7-8711-7ba531e6b60d'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Temperature</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Temperature"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='2'/>
+                <xs:enumeration value='1'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='High'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Normal'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Low'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://www.jblearning.com/catalog/9781284096378/
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-98ab38e8-9d92-4b44-92cb-5ffa072d199e' substitutionGroup='mlhim2:items' type='mlhim2:ct-98ab38e8-9d92-4b44-92cb-5ffa072d199e'/>
+  <xs:complexType name='ct-98ab38e8-9d92-4b44-92cb-5ffa072d199e'> <!-- Adapter for: Temperature -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-f99343aa-2674-4eb7-8711-7ba531e6b60d'/> <!-- Reference to: Temperature -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-ba8c6e7f-f217-49b4-b8ec-6b6baa438031' xml:lang='en-US'> <!-- Temperature -->
+    <xs:annotation>
+      <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking temperature
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-ba8c6e7f-f217-49b4-b8ec-6b6baa438031'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvQuantityType'/>
+    <rdfs:label>Temperature</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvQuantityType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Temperature"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+          <xs:element maxOccurs='1' minOccurs='1'  name='magnitude'>
+            <xs:simpleType>
+            <xs:restriction base='xs:decimal'>
+              <xs:minInclusive value='0'/>
+              <xs:maxInclusive value='200'/>
+            </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:magnitude-status'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='error'  type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='accuracy' type='xs:int' default='0'/>
+          <xs:element maxOccurs='1' minOccurs='1' ref='mlhim2:el-6d9cac50-6f21-4496-a2b8-e6c184c674e3'/> <!-- DvQuantity-units -->
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name='ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3' xml:lang='en-US'> <!-- UCUM Codes for Temperature Measurement Units -->
+    <xs:annotation>
+    <xs:documentation>
+      The Unified Code for Units of Measure symbols that represent a determinate amount or quantity used as the standard of measurement for the property of a body or region of space that determines whether or not there will be a net flow of heat into it or out of it from a neighboring body or region and in which direction (if any) the heat will flow, perceptible by living organism as a somatic sensation of cold or heat an individual person. 
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>UCUM Codes for Temperature Measurement Units</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='https%3A//cdebrowser.nci.nih.gov/CDEBrowser/search%3FelementDetails%3D9%26FirstTimer%3D0%26PageId%3DElementDetailsGroup%26publicId%3D2956267%26version%3D1.0'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="UCUM Codes for Temperature Measurement Units"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Celsius'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3#Celsius'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3'/>
+      <rdfs:label>Celsius</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='https://cdebrowser.nci.nih.gov/CDEBrowser/valueMeaningAlternates.do?method=showValueMeaningAlternates&amp;id=2956270'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Fahrenheit'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3#Fahrenheit'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3'/>
+      <rdfs:label>Fahrenheit</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='https://cdebrowser.nci.nih.gov/CDEBrowser/valueMeaningAlternates.do?method=showValueMeaningAlternates&amp;id=2956268'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-6dbc6e00-c1a6-4421-b4d6-98edc290569f' substitutionGroup='mlhim2:items' type='mlhim2:ct-6dbc6e00-c1a6-4421-b4d6-98edc290569f'/>
+  <xs:complexType name='ct-6dbc6e00-c1a6-4421-b4d6-98edc290569f'> <!-- Adapter for: Temperature -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-ba8c6e7f-f217-49b4-b8ec-6b6baa438031'/> <!-- Reference to: Temperature -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-6362b90a-4b2e-44e5-ad16-79704fc174d4' xml:lang='en-US'> <!-- Capillary refill -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking capillary refill
+
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-6362b90a-4b2e-44e5-ad16-79704fc174d4'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Capillary refill</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Capillary refill"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Less than 2 seconds'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-6362b90a-4b2e-44e5-ad16-79704fc174d4#Less than 2 seconds'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-6362b90a-4b2e-44e5-ad16-79704fc174d4'/>
+      <rdfs:label>Less than 2 seconds</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Normal'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='2 seconds and more'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-6362b90a-4b2e-44e5-ad16-79704fc174d4#2 seconds and more'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-6362b90a-4b2e-44e5-ad16-79704fc174d4'/>
+      <rdfs:label>2 seconds and more</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Increased'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-8b67e76a-f3df-4c69-9976-700e63547077' substitutionGroup='mlhim2:items' type='mlhim2:ct-8b67e76a-f3df-4c69-9976-700e63547077'/>
+  <xs:complexType name='ct-8b67e76a-f3df-4c69-9976-700e63547077'> <!-- Adapter for: Capillary refill -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-6362b90a-4b2e-44e5-ad16-79704fc174d4'/> <!-- Reference to: Capillary refill -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-201cd535-5ef9-4984-8545-99c3070a052b' xml:lang='en-US'> <!-- Moist -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking skin moist
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-201cd535-5ef9-4984-8545-99c3070a052b'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Moist</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Moist"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Dry'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-201cd535-5ef9-4984-8545-99c3070a052b#Dry'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-201cd535-5ef9-4984-8545-99c3070a052b'/>
+      <rdfs:label>Dry</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Good perfusion'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Moist'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-201cd535-5ef9-4984-8545-99c3070a052b#Moist'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-201cd535-5ef9-4984-8545-99c3070a052b'/>
+      <rdfs:label>Moist</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='Reduced perfusion or shock'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-aeec907a-ae3b-41c6-82d1-0ab760b20c71' substitutionGroup='mlhim2:items' type='mlhim2:ct-aeec907a-ae3b-41c6-82d1-0ab760b20c71'/>
+  <xs:complexType name='ct-aeec907a-ae3b-41c6-82d1-0ab760b20c71'> <!-- Adapter for: Moist -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-201cd535-5ef9-4984-8545-99c3070a052b'/> <!-- Reference to: Moist -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2' xml:lang='en-US'> <!-- Skin Color -->
+    <xs:annotation>
+    <xs:documentation>
+      Item C of Pre-Hospital Trauma Life Support (PHTLS): Checking skin color
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Skin Color</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Skin Color"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Normal'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2#Normal'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2'/>
+      <rdfs:label>Normal</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/catalog/9781284096378/'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Pale'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2#Pale'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2'/>
+      <rdfs:label>Pale</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/catalog/9781284096378/'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Cyanotic'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2#Cyanotic'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2'/>
+      <rdfs:label>Cyanotic</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/catalog/9781284096378/'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Others'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2#Others'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2'/>
+      <rdfs:label>Others</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/catalog/9781284096378/'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-a38946bf-83d9-477e-9ca8-0bc0a2f47dbb' substitutionGroup='mlhim2:items' type='mlhim2:ct-a38946bf-83d9-477e-9ca8-0bc0a2f47dbb'/>
+  <xs:complexType name='ct-a38946bf-83d9-477e-9ca8-0bc0a2f47dbb'> <!-- Adapter for: Skin Color -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-bd532d61-455f-45f4-bb02-aaa86f60e4a2'/> <!-- Reference to: Skin Color -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-bd20c87c-c890-4a85-9e79-038ba64a5a92' xml:lang='en-US'> <!-- Bleeding -->
+    <xs:annotation>
+    <xs:documentation>
+      Type of bleeding
+
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Bleeding</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Bleeding"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Capillary'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92#Capillary'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92'/>
+      <rdfs:label>Capillary</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/samples/0763742090/42090_CH08_090_096.pdf'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Venous'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92#Venous'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92'/>
+      <rdfs:label>Venous</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/samples/0763742090/42090_CH08_090_096.pdf'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Arterial'>
+                  <xs:annotation>
+                    <xs:appinfo>
+    <rdf:Description rdf:about='mlhim2:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92#Arterial'>
+      <rdfs:subPropertyOf rdf:resource='s3m:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92'/>
+      <rdfs:label>Arterial</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http://www.jblearning.com/samples/0763742090/42090_CH08_090_096.pdf'/>    </rdf:Description>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-214413d9-1516-4f31-bc60-dc92f9c9142a' substitutionGroup='mlhim2:items' type='mlhim2:ct-214413d9-1516-4f31-bc60-dc92f9c9142a'/>
+  <xs:complexType name='ct-214413d9-1516-4f31-bc60-dc92f9c9142a'> <!-- Adapter for: Bleeding -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-bd20c87c-c890-4a85-9e79-038ba64a5a92'/> <!-- Reference to: Bleeding -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-51cc78ed-08ca-4b35-a090-47428ed0b1eb'> <!-- Disability -->
+    <xs:annotation>
+    <xs:documentation>
+      Item D of Pre-Hospital Trauma Life Support (PHTLS): Glasgow Coma Scale
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-51cc78ed-08ca-4b35-a090-47428ed0b1eb'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>Disability</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="Disability"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-b426e0fc-0bd5-4a6f-8bab-96e2eed3566f'/><!-- DvOrdinal Glasgow Coma Scale: Eye -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-09588b36-1f92-47fe-a2fd-0f010cf90501'/><!-- DvOrdinal Glasgow Coma Scale: Final result -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-6a0f70c3-58af-430a-b24b-121930cffaa3'/><!-- DvOrdinal Glasgow Coma Scale: Motor -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-7012d7f4-042c-429c-9f7e-7b8c2839fd2a'/><!-- DvOrdinal Glasgow Coma Scale: Verbal -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+
+
+  <xs:complexType name='ct-aba94abf-32e8-4fd1-950a-d518be67dde0' xml:lang='en-US'> <!-- Glasgow Coma Scale: Eye -->
+    <xs:annotation>
+      <xs:documentation>
+      Item D of Pre-Hospital Trauma Life Support (PHTLS): Glasgow Coma Scale - Eye
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-aba94abf-32e8-4fd1-950a-d518be67dde0'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Glasgow Coma Scale: Eye</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Glasgow Coma Scale: Eye"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='1'/>
+                <xs:enumeration value='2'/>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='4'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Does not open eyes'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Opens eyes in response to painful stimuli'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Opens eyes in response to voice'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Opens eyes spontaneously'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-b426e0fc-0bd5-4a6f-8bab-96e2eed3566f' substitutionGroup='mlhim2:items' type='mlhim2:ct-b426e0fc-0bd5-4a6f-8bab-96e2eed3566f'/>
+  <xs:complexType name='ct-b426e0fc-0bd5-4a6f-8bab-96e2eed3566f'> <!-- Adapter for: Glasgow Coma Scale: Eye -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-aba94abf-32e8-4fd1-950a-d518be67dde0'/> <!-- Reference to: Glasgow Coma Scale: Eye -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-73b01305-a24c-4bca-a426-24ea8f13c289' xml:lang='en-US'> <!-- Glasgow Coma Scale: Final result -->
+    <xs:annotation>
+      <xs:documentation>
+      Item of Pre-Hospital Trauma Life Support (PHTLS): Glasgow Coma Scale (Final result)
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-73b01305-a24c-4bca-a426-24ea8f13c289'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Glasgow Coma Scale: Final result</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Glasgow Coma Scale: Final result"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='4'/>
+                <xs:enumeration value='5'/>
+                <xs:enumeration value='6'/>
+                <xs:enumeration value='7'/>
+                <xs:enumeration value='8'/>
+                <xs:enumeration value='9'/>
+                <xs:enumeration value='10'/>
+                <xs:enumeration value='11'/>
+                <xs:enumeration value='12'/>
+                <xs:enumeration value='13'/>
+                <xs:enumeration value='14'/>
+                <xs:enumeration value='15'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='3'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='4'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='5'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='6'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='7'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='8'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='9'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='10'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='11'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='12'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='13'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='14'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='15'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-09588b36-1f92-47fe-a2fd-0f010cf90501' substitutionGroup='mlhim2:items' type='mlhim2:ct-09588b36-1f92-47fe-a2fd-0f010cf90501'/>
+  <xs:complexType name='ct-09588b36-1f92-47fe-a2fd-0f010cf90501'> <!-- Adapter for: Glasgow Coma Scale: Final result -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-73b01305-a24c-4bca-a426-24ea8f13c289'/> <!-- Reference to: Glasgow Coma Scale: Final result -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-1f487ce1-4f52-4768-a251-0cae83212490' xml:lang='en-US'> <!-- Glasgow Coma Scale: Motor -->
+    <xs:annotation>
+      <xs:documentation>
+      Item D of Pre-Hospital Trauma Life Support (PHTLS): Glasgow Coma Scale - Motor
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-1f487ce1-4f52-4768-a251-0cae83212490'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Glasgow Coma Scale: Motor</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Glasgow Coma Scale: Motor"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='1'/>
+                <xs:enumeration value='2'/>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='4'/>
+                <xs:enumeration value='5'/>
+                <xs:enumeration value='6'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Makes no movements'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Extension to painful stimuli (decerebrate response)'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Abnormal flexion to painful stimuli (decorticate response)'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Flexion / Withdrawal to painful stimuli'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Localizes painful stimuli'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Obeys commands'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-6a0f70c3-58af-430a-b24b-121930cffaa3' substitutionGroup='mlhim2:items' type='mlhim2:ct-6a0f70c3-58af-430a-b24b-121930cffaa3'/>
+  <xs:complexType name='ct-6a0f70c3-58af-430a-b24b-121930cffaa3'> <!-- Adapter for: Glasgow Coma Scale: Motor -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-1f487ce1-4f52-4768-a251-0cae83212490'/> <!-- Reference to: Glasgow Coma Scale: Motor -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-d018467a-dfd7-4108-a54a-50ed12617b9d' xml:lang='en-US'> <!-- Glasgow Coma Scale: Verbal -->
+    <xs:annotation>
+      <xs:documentation>
+      Item D of Pre-Hospital Trauma Life Support (PHTLS): Glasgow Comma Scale - Verbal
+      </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-d018467a-dfd7-4108-a54a-50ed12617b9d'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvOrdinalType'/>
+    <rdfs:label>Glasgow Coma Scale: Verbal</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvOrdinalType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Glasgow Coma Scale: Verbal"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:reference-ranges'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='normal-status' type='xs:string' default=''/> 
+            <xs:element maxOccurs='1' minOccurs='1' name='DvOrdinal-dv'>
+              <xs:simpleType>
+              <xs:restriction base='xs:decimal'>
+                <xs:enumeration value='1'/>
+                <xs:enumeration value='2'/>
+                <xs:enumeration value='3'/>
+                <xs:enumeration value='4'/>
+                <xs:enumeration value='5'/>
+              </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='1' name='symbol'>
+              <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                  <xs:enumeration value='Makes no sounds'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Incomprehensible sounds'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Utters inappropriate words'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Confused, disoriented'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                  <xs:enumeration value='Oriented, converses normally'>
+                  <xs:annotation>
+                    <xs:documentation>
+                      http://en.wikipedia.org/wiki/Glasgow_Coma_Scale
+                    </xs:documentation>
+                  </xs:annotation>
+                  </xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-7012d7f4-042c-429c-9f7e-7b8c2839fd2a' substitutionGroup='mlhim2:items' type='mlhim2:ct-7012d7f4-042c-429c-9f7e-7b8c2839fd2a'/>
+  <xs:complexType name='ct-7012d7f4-042c-429c-9f7e-7b8c2839fd2a'> <!-- Adapter for: Glasgow Coma Scale: Verbal -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-d018467a-dfd7-4108-a54a-50ed12617b9d'/> <!-- Reference to: Glasgow Coma Scale: Verbal -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-9047320a-b279-49c3-914c-082103780f3f'> <!-- HL7/MLHIM Mapping -->
+    <xs:annotation>
+    <xs:documentation>
+      Mapping between the OBX segment of the HL7 message and the correspondent MLHIM CCD PcT UUID  for the Pre-Hospital Trauma Life Support (PHTLS)
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-9047320a-b279-49c3-914c-082103780f3f'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>HL7/MLHIM Mapping</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-9047320a-b279-49c3-914c-082103780f3f'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>HL7/MLHIM Mapping</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='https%3A//readthedocs.org/projects/mlhim-specifications/'/>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-9047320a-b279-49c3-914c-082103780f3f'>
+    <rdfs:subClassOf rdf:resource='mlhim2:ClusterType'/>
+    <rdfs:label>HL7/MLHIM Mapping</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.hl7standards.com/blog/2007/06/27/what-is-an-obx/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:ClusterType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='cluster-subject' type='xs:string' fixed="HL7/MLHIM Mapping"/>
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f'/><!-- DvString OBX segment of the HL7 message -->
+      <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526'/><!-- DvString UUID of the MLHIM CCD PcT -->
+        </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name='ct-4e0c2b62-3097-4050-85ae-58af8e57fcb3' xml:lang='pt-BR'> <!-- OBX segment of the HL7 message -->
+    <xs:annotation>
+    <xs:documentation>
+      OBX segment of the HL7 message for the Pre-Hospital Trauma Life Support (PHTLS)
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-4e0c2b62-3097-4050-85ae-58af8e57fcb3'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>OBX segment of the HL7 message</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-4e0c2b62-3097-4050-85ae-58af8e57fcb3'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>OBX segment of the HL7 message</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.hl7standards.com/blog/2007/06/27/what-is-an-obx/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="OBX segment of the HL7 message"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='pt-BR'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-f9720751-951c-4575-9c21-601b66c4361f' substitutionGroup='mlhim2:items' type='mlhim2:ct-f9720751-951c-4575-9c21-601b66c4361f'/>
+  <xs:complexType name='ct-f9720751-951c-4575-9c21-601b66c4361f'> <!-- Adapter for: OBX segment of the HL7 message -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3'/> <!-- Reference to: OBX segment of the HL7 message -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-16a46968-7d3a-4018-be6f-f92c444105ea' xml:lang='pt-BR'> <!-- UUID of the MLHIM CCD PcT -->
+    <xs:annotation>
+    <xs:documentation>
+      Universal Unique Identifier (UUID) of the Multileve. Healthcare Information Modeling Concept Constraint Definition Pluggable complexType (MLHIM CCD PcT) of Pre-Hospital Trauma Life Support (PHTLS)
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-16a46968-7d3a-4018-be6f-f92c444105ea'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>UUID of the MLHIM CCD PcT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-16a46968-7d3a-4018-be6f-f92c444105ea'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>UUID of the MLHIM CCD PcT</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='https%3A//readthedocs.org/projects/mlhim-specifications/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="UUID of the MLHIM CCD PcT"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='pt-BR'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-0fd46bea-98b1-4ff9-8dde-224952405526' substitutionGroup='mlhim2:items' type='mlhim2:ct-0fd46bea-98b1-4ff9-8dde-224952405526'/>
+  <xs:complexType name='ct-0fd46bea-98b1-4ff9-8dde-224952405526'> <!-- Adapter for: UUID of the MLHIM CCD PcT -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea'/> <!-- Reference to: UUID of the MLHIM CCD PcT -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:complexType name='ct-ee07e689-514b-4f87-bf5f-2350dd284efb' xml:lang='en-US'> <!-- Airway obstruction -->
+    <xs:annotation>
+    <xs:documentation>
+      Item A of the Pre- Hospital Trauma Life Support (PHTLS): Checking airways for obstruction
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-ee07e689-514b-4f87-bf5f-2350dd284efb'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvBooleanType'/>
+    <rdfs:label>Airway obstruction</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvBooleanType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Airway obstruction"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:choice>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-true'>
+            <xs:simpleType>
+              <xs:restriction base='xs:string'>
+                  <xs:enumeration value='YES'/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-false'>
+            <xs:simpleType>
+              <xs:restriction base='xs:string'>
+                  <xs:enumeration value='NO'/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          </xs:choice>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-7f183683-e2c7-4c3d-b21a-03a08448dab8' substitutionGroup='mlhim2:items' type='mlhim2:ct-7f183683-e2c7-4c3d-b21a-03a08448dab8'/>
+  <xs:complexType name='ct-7f183683-e2c7-4c3d-b21a-03a08448dab8'> <!-- Adapter for: Airway obstruction -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-ee07e689-514b-4f87-bf5f-2350dd284efb'/> <!-- Reference to: Airway obstruction -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name='ct-58f45fc2-4cf2-4a12-91a9-24e0decdaf39' xml:lang='en-US'> <!-- Exposure -->
+    <xs:annotation>
+    <xs:documentation>
+      Item E of Pre-Hospital Trauma Life Support (PHTLS): Description of the patient exposure procedure
+    </xs:documentation>
+    <xs:appinfo>
+    <rdf:Description rdf:about='http://www.mlhim.org/xmlns/mlhim2:ct-58f45fc2-4cf2-4a12-91a9-24e0decdaf39'>
+    <rdfs:subClassOf rdf:resource='mlhim2:DvStringType'/>
+    <rdfs:label>Exposure</rdfs:label>
+      <rdfs:isDefinedBy rdf:resource='http%3A//www.jblearning.com/catalog/9781284096378/'/>
+    </rdf:Description>
+    </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvStringType'>
+        <xs:sequence>
+          <xs:element maxOccurs='1' minOccurs='1' name='data-name' type='xs:string' fixed="Exposure"/>
+          <xs:element maxOccurs='1' minOccurs='0' ref='mlhim2:ExceptionalValue'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-begin' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='valid-time-end' type='xs:dateTime'/>
+          <xs:element maxOccurs='1' minOccurs='1' name='DvString-dv' type='xs:string'/>
+          <xs:element maxOccurs='1' minOccurs='0' name='language' type='xs:language' default='en-US'/>
+          </xs:sequence>
+        </xs:restriction>
+      </xs:complexContent>
+    </xs:complexType>
+
+  <xs:element name='el-d9dda3b5-784f-42cf-a98b-64b2241dc82b' substitutionGroup='mlhim2:items' type='mlhim2:ct-d9dda3b5-784f-42cf-a98b-64b2241dc82b'/>
+  <xs:complexType name='ct-d9dda3b5-784f-42cf-a98b-64b2241dc82b'> <!-- Adapter for: Exposure -->
+    <xs:complexContent>
+      <xs:restriction base='mlhim2:DvAdapterType'>
+        <xs:sequence>
+          <xs:element  maxOccurs='unbounded' minOccurs='0' ref='mlhim2:el-58f45fc2-4cf2-4a12-91a9-24e0decdaf39'/> <!-- Reference to: Exposure -->
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:element name='el-f4d9b375-a230-4904-9a56-2079f1c11540' substitutionGroup='mlhim2:definition' type='mlhim2:ct-f4d9b375-a230-4904-9a56-2079f1c11540'/>
+  <xs:element name='el-a7e60b40-1818-4781-9228-bf6b4ab20480' substitutionGroup='mlhim2:entry-subject' type='mlhim2:ct-a7e60b40-1818-4781-9228-bf6b4ab20480'/>
+  <xs:element name='el-c73b99d9-d7d3-4469-9bd9-4a624a228d12' substitutionGroup='mlhim2:external-ref' type='mlhim2:ct-c73b99d9-d7d3-4469-9bd9-4a624a228d12'/>
+  <xs:element name='el-ca067d0c-5fe1-4661-b43c-d1fded01d074' substitutionGroup='mlhim2:details' type='mlhim2:ct-ca067d0c-5fe1-4661-b43c-d1fded01d074'/>
+  <xs:element name='el-a85b79c1-3d4b-4935-ba06-2232af9ba81e' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-a85b79c1-3d4b-4935-ba06-2232af9ba81e'/>
+  <xs:element name='el-443dda9d-fe1b-47a5-a506-cb4b96f137eb' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-443dda9d-fe1b-47a5-a506-cb4b96f137eb'/>
+  <xs:element name='el-9226daaa-1143-4267-b715-b8fc09561154' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-9226daaa-1143-4267-b715-b8fc09561154'/>
+  <xs:element name='el-48c18185-97ed-4723-8a19-fb3ccf88f5df' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-48c18185-97ed-4723-8a19-fb3ccf88f5df'/>
+  <xs:element name='el-21d8b9e0-fbe2-4210-adec-d795baf4fdd1' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-21d8b9e0-fbe2-4210-adec-d795baf4fdd1'/>
+  <xs:element name='el-0cc01616-7adc-400e-8f90-3fb8b436560c' substitutionGroup='mlhim2:entry-provider' type='mlhim2:ct-0cc01616-7adc-400e-8f90-3fb8b436560c'/>
+  <xs:element name='el-e2d44d11-1841-4f3a-84b5-4f660fc14f89' substitutionGroup='mlhim2:entry-data' type='mlhim2:ct-e2d44d11-1841-4f3a-84b5-4f660fc14f89'/>
+  <xs:element name='el-011d5651-c492-4a6a-b79e-df5dfdce18f4' substitutionGroup='mlhim2:items' type='mlhim2:ct-011d5651-c492-4a6a-b79e-df5dfdce18f4'/>
+  <xs:element name='el-51f0cf8a-96b8-4b4e-a026-df1591b42b2a' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-51f0cf8a-96b8-4b4e-a026-df1591b42b2a'/>
+  <xs:element name='el-ab72c7d9-843b-47ce-883a-f6da2e6c5a80' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-ab72c7d9-843b-47ce-883a-f6da2e6c5a80'/>
+  <xs:element name='el-1fded923-76c3-446a-99db-94c9ea528855' substitutionGroup='mlhim2:DvCount-units' type='mlhim2:ct-1fded923-76c3-446a-99db-94c9ea528855'/>
+  <xs:element name='el-5d546138-6707-4d5c-8a30-8d13f6669c55' substitutionGroup='mlhim2:items' type='mlhim2:ct-5d546138-6707-4d5c-8a30-8d13f6669c55'/>
+  <xs:element name='el-6fc41830-0f73-48f1-ae4c-4b730d57565b' substitutionGroup='mlhim2:items' type='mlhim2:ct-6fc41830-0f73-48f1-ae4c-4b730d57565b'/>
+  <xs:element name='el-c69a1ab9-7699-4a30-b282-9e26b0218e10' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-c69a1ab9-7699-4a30-b282-9e26b0218e10'/>
+  <xs:element name='el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d' substitutionGroup='mlhim2:DvQuantity-units' type='mlhim2:ct-8ab419ac-df3a-4d78-a40d-7a4d9c13535d'/>
+  <xs:element name='el-9da16c03-0990-4d88-85fd-28441a8458e8' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-9da16c03-0990-4d88-85fd-28441a8458e8'/>
+  <xs:element name='el-1e854154-fa52-48e6-8999-bef8e17c05c7' substitutionGroup='mlhim2:items' type='mlhim2:ct-1e854154-fa52-48e6-8999-bef8e17c05c7'/>
+  <xs:element name='el-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4'/>
+  <xs:element name='el-d0ad28f3-5c34-426e-b504-39f1b47d8a71' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-d0ad28f3-5c34-426e-b504-39f1b47d8a71'/>
+  <xs:element name='el-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c'/>
+  <xs:element name='el-84f32fe2-b8eb-4666-b714-71a07901bf97' substitutionGroup='mlhim2:DvCount-units' type='mlhim2:ct-84f32fe2-b8eb-4666-b714-71a07901bf97'/>
+  <xs:element name='el-2cf2bc6d-dfd4-43e3-b947-506aec452b35' substitutionGroup='mlhim2:items' type='mlhim2:ct-2cf2bc6d-dfd4-43e3-b947-506aec452b35'/>
+  <xs:element name='el-028465a6-67a2-457a-a18a-be27bcfbc436' substitutionGroup='mlhim2:items' type='mlhim2:ct-028465a6-67a2-457a-a18a-be27bcfbc436'/>
+  <xs:element name='el-f99343aa-2674-4eb7-8711-7ba531e6b60d' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-f99343aa-2674-4eb7-8711-7ba531e6b60d'/>
+  <xs:element name='el-ba8c6e7f-f217-49b4-b8ec-6b6baa438031' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-ba8c6e7f-f217-49b4-b8ec-6b6baa438031'/>
+  <xs:element name='el-6d9cac50-6f21-4496-a2b8-e6c184c674e3' substitutionGroup='mlhim2:DvQuantity-units' type='mlhim2:ct-6d9cac50-6f21-4496-a2b8-e6c184c674e3'/>
+  <xs:element name='el-6362b90a-4b2e-44e5-ad16-79704fc174d4' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-6362b90a-4b2e-44e5-ad16-79704fc174d4'/>
+  <xs:element name='el-201cd535-5ef9-4984-8545-99c3070a052b' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-201cd535-5ef9-4984-8545-99c3070a052b'/>
+  <xs:element name='el-bd532d61-455f-45f4-bb02-aaa86f60e4a2' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-bd532d61-455f-45f4-bb02-aaa86f60e4a2'/>
+  <xs:element name='el-bd20c87c-c890-4a85-9e79-038ba64a5a92' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-bd20c87c-c890-4a85-9e79-038ba64a5a92'/>
+  <xs:element name='el-51cc78ed-08ca-4b35-a090-47428ed0b1eb' substitutionGroup='mlhim2:items' type='mlhim2:ct-51cc78ed-08ca-4b35-a090-47428ed0b1eb'/>
+  <xs:element name='el-aba94abf-32e8-4fd1-950a-d518be67dde0' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-aba94abf-32e8-4fd1-950a-d518be67dde0'/>
+  <xs:element name='el-73b01305-a24c-4bca-a426-24ea8f13c289' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-73b01305-a24c-4bca-a426-24ea8f13c289'/>
+  <xs:element name='el-1f487ce1-4f52-4768-a251-0cae83212490' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-1f487ce1-4f52-4768-a251-0cae83212490'/>
+  <xs:element name='el-d018467a-dfd7-4108-a54a-50ed12617b9d' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-d018467a-dfd7-4108-a54a-50ed12617b9d'/>
+  <xs:element name='el-9047320a-b279-49c3-914c-082103780f3f' substitutionGroup='mlhim2:items' type='mlhim2:ct-9047320a-b279-49c3-914c-082103780f3f'/>
+  <xs:element name='el-4e0c2b62-3097-4050-85ae-58af8e57fcb3' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-4e0c2b62-3097-4050-85ae-58af8e57fcb3'/>
+  <xs:element name='el-16a46968-7d3a-4018-be6f-f92c444105ea' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-16a46968-7d3a-4018-be6f-f92c444105ea'/>
+  <xs:element name='el-ee07e689-514b-4f87-bf5f-2350dd284efb' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-ee07e689-514b-4f87-bf5f-2350dd284efb'/>
+  <xs:element name='el-58f45fc2-4cf2-4a12-91a9-24e0decdaf39' substitutionGroup='mlhim2:DvAdapter-dv' type='mlhim2:ct-58f45fc2-4cf2-4a12-91a9-24e0decdaf39'/>
+
+</xs:schema>

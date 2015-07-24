@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mlhim2:ccd-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf xmlns:mlhim2='http://www.mlhim.org/xmlns/mlhim2'
+
+xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+xsi:schemaLocation='http://www.mlhim.org/xmlns/mlhim2 http://www.ccdgen.com/ccdlib/ccd-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf.xsd'>
+
+  <mlhim2:el-f4d9b375-a230-4904-9a56-2079f1c11540> <!-- Entry -->
+  <!-- entry-links -->
+  <!-- entry-audit -->
+  <language>en-US</language>
+  <encoding>utf-8</encoding>
+  <!-- entry-subject -->
+      <mlhim2:el-a7e60b40-1818-4781-9228-bf6b4ab20480> <!-- Party -->
+      <party-name>John Brown</party-name>
+      <!-- PI external-ref -->
+      <mlhim2:el-c73b99d9-d7d3-4469-9bd9-4a624a228d12> <!-- DvURI -->
+        <data-name>External Reference for Party</data-name>
+        <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+        <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+        <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+        <DvURI-dv>http://www.ccdgen.com</DvURI-dv>
+        <relation>Party Associated with the record</relation>
+      </mlhim2:el-c73b99d9-d7d3-4469-9bd9-4a624a228d12>
+      <!-- PI details -->
+      <mlhim2:el-ca067d0c-5fe1-4661-b43c-d1fded01d074> <!-- Cluster -->
+        <cluster-subject>Address Details (US)</cluster-subject>
+        <mlhim2:el-d24affc1-a9ff-487a-9029-204f3b4d8e7e> <!-- DvAdapter -->
+          <mlhim2:el-a85b79c1-3d4b-4935-ba06-2232af9ba81e> <!-- DvString -->
+            <data-name>Additional Address Line(s) (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>bl 1</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-a85b79c1-3d4b-4935-ba06-2232af9ba81e>
+        </mlhim2:el-d24affc1-a9ff-487a-9029-204f3b4d8e7e>
+        <mlhim2:el-b65ea20c-3768-45cd-a059-004ece61bc89> <!-- DvAdapter -->
+          <mlhim2:el-443dda9d-fe1b-47a5-a506-cb4b96f137eb> <!-- DvString -->
+            <data-name>City Name (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Miami</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-443dda9d-fe1b-47a5-a506-cb4b96f137eb>
+        </mlhim2:el-b65ea20c-3768-45cd-a059-004ece61bc89>
+        <mlhim2:el-2bb59f5a-223e-4b8e-b63f-ed8beb62849e> <!-- DvAdapter -->
+          <mlhim2:el-9226daaa-1143-4267-b715-b8fc09561154> <!-- DvString -->
+            <data-name>State Abbreviation (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>FL</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-9226daaa-1143-4267-b715-b8fc09561154>
+        </mlhim2:el-2bb59f5a-223e-4b8e-b63f-ed8beb62849e>
+        <mlhim2:el-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f> <!-- DvAdapter -->
+          <mlhim2:el-48c18185-97ed-4723-8a19-fb3ccf88f5df> <!-- DvString -->
+            <data-name>Street Number and Name (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>510 Ocean Drive</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-48c18185-97ed-4723-8a19-fb3ccf88f5df>
+        </mlhim2:el-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f>
+        <mlhim2:el-c64b7604-6189-412d-bb70-48baba85f366> <!-- DvAdapter -->
+          <mlhim2:el-21d8b9e0-fbe2-4210-adec-d795baf4fdd1> <!-- DvString -->
+            <data-name>Zip Code (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>33139</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-21d8b9e0-fbe2-4210-adec-d795baf4fdd1>
+        </mlhim2:el-c64b7604-6189-412d-bb70-48baba85f366>
+      </mlhim2:el-ca067d0c-5fe1-4661-b43c-d1fded01d074>
+    </mlhim2:el-a7e60b40-1818-4781-9228-bf6b4ab20480>
+  <!-- entry-provider -->
+      <mlhim2:el-0cc01616-7adc-400e-8f90-3fb8b436560c> <!-- Party -->
+      <party-name>ABCDE Mobile</party-name>
+      <!-- PI external-ref -->
+      <mlhim2:el-c73b99d9-d7d3-4469-9bd9-4a624a228d12> <!-- DvURI -->
+        <data-name>External Reference for Party</data-name>
+        <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+        <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+        <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+        <DvURI-dv>http://www.ccdgen.com</DvURI-dv>
+        <relation>Party Associated with the record</relation>
+      </mlhim2:el-c73b99d9-d7d3-4469-9bd9-4a624a228d12>
+      <!-- PI details -->
+      <mlhim2:el-ca067d0c-5fe1-4661-b43c-d1fded01d074> <!-- Cluster -->
+        <cluster-subject>Address Details (US)</cluster-subject>
+        <mlhim2:el-d24affc1-a9ff-487a-9029-204f3b4d8e7e> <!-- DvAdapter -->
+          <mlhim2:el-a85b79c1-3d4b-4935-ba06-2232af9ba81e> <!-- DvString -->
+            <data-name>Additional Address Line(s) (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Default String</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-a85b79c1-3d4b-4935-ba06-2232af9ba81e>
+        </mlhim2:el-d24affc1-a9ff-487a-9029-204f3b4d8e7e>
+        <mlhim2:el-b65ea20c-3768-45cd-a059-004ece61bc89> <!-- DvAdapter -->
+          <mlhim2:el-443dda9d-fe1b-47a5-a506-cb4b96f137eb> <!-- DvString -->
+            <data-name>City Name (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Miame</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-443dda9d-fe1b-47a5-a506-cb4b96f137eb>
+        </mlhim2:el-b65ea20c-3768-45cd-a059-004ece61bc89>
+        <mlhim2:el-2bb59f5a-223e-4b8e-b63f-ed8beb62849e> <!-- DvAdapter -->
+          <mlhim2:el-9226daaa-1143-4267-b715-b8fc09561154> <!-- DvString -->
+            <data-name>State Abbreviation (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>FL</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-9226daaa-1143-4267-b715-b8fc09561154>
+        </mlhim2:el-2bb59f5a-223e-4b8e-b63f-ed8beb62849e>
+        <mlhim2:el-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f> <!-- DvAdapter -->
+          <mlhim2:el-48c18185-97ed-4723-8a19-fb3ccf88f5df> <!-- DvString -->
+            <data-name>Street Number and Name (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>710 Ocean Drive</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-48c18185-97ed-4723-8a19-fb3ccf88f5df>
+        </mlhim2:el-caa2be1d-3e6c-4cea-b44c-9829d7b23b3f>
+        <mlhim2:el-c64b7604-6189-412d-bb70-48baba85f366> <!-- DvAdapter -->
+          <mlhim2:el-21d8b9e0-fbe2-4210-adec-d795baf4fdd1> <!-- DvString -->
+            <data-name>Zip Code (US)</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>33139</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-21d8b9e0-fbe2-4210-adec-d795baf4fdd1>
+        </mlhim2:el-c64b7604-6189-412d-bb70-48baba85f366>
+      </mlhim2:el-ca067d0c-5fe1-4661-b43c-d1fded01d074>
+    </mlhim2:el-0cc01616-7adc-400e-8f90-3fb8b436560c>
+  <!-- other-participations -->
+  <!-- protocol-id -->
+  <current-state>default</current-state>
+  <!-- workflow-id -->
+  <!-- attestation -->
+  <!-- entry-data -->
+      <mlhim2:el-e2d44d11-1841-4f3a-84b5-4f660fc14f89> <!-- Cluster -->
+      <cluster-subject>PHTLS</cluster-subject>
+      <mlhim2:el-011d5651-c492-4a6a-b79e-df5dfdce18f4> <!-- Cluster -->
+        <cluster-subject>Breathing</cluster-subject>
+        <mlhim2:el-6b65e41b-ac80-46d3-b5d8-10058440616c> <!-- DvAdapter -->
+          <mlhim2:el-51f0cf8a-96b8-4b4e-a026-df1591b42b2a> <!-- DvOrdinal -->
+            <data-name>Breathing</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <normal-status>Normal</normal-status>
+            <DvOrdinal-dv>1</DvOrdinal-dv>
+            <symbol>Apneic</symbol>
+          </mlhim2:el-51f0cf8a-96b8-4b4e-a026-df1591b42b2a>
+        </mlhim2:el-6b65e41b-ac80-46d3-b5d8-10058440616c>
+        <mlhim2:el-9d162006-197c-4950-8770-3143dc9ebea2> <!-- DvAdapter -->
+          <mlhim2:el-ab72c7d9-843b-47ce-883a-f6da2e6c5a80> <!-- DvCount -->
+              <data-name>Respiratory Rate</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <magnitude>23</magnitude>
+              <mlhim2:magnitude-status>=</mlhim2:magnitude-status>
+              <error>0</error>
+              <accuracy>0</accuracy>
+            <mlhim2:el-1fded923-76c3-446a-99db-94c9ea528855> <!-- DvString -->
+              <data-name>Breaths per minute</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <DvString-dv>bpm</DvString-dv>
+              <language>en-US</language>
+            </mlhim2:el-1fded923-76c3-446a-99db-94c9ea528855>
+          </mlhim2:el-ab72c7d9-843b-47ce-883a-f6da2e6c5a80>
+        </mlhim2:el-9d162006-197c-4950-8770-3143dc9ebea2>
+      </mlhim2:el-011d5651-c492-4a6a-b79e-df5dfdce18f4>
+      <mlhim2:el-5d546138-6707-4d5c-8a30-8d13f6669c55> <!-- Cluster -->
+        <cluster-subject>Circulation</cluster-subject>
+        <mlhim2:el-6fc41830-0f73-48f1-ae4c-4b730d57565b> <!-- Cluster -->
+          <cluster-subject>Blood pressure</cluster-subject>
+          
+          <mlhim2:el-67c93c32-9760-495d-9030-1fec3da18e40> <!-- DvAdapter -->
+            <mlhim2:el-c69a1ab9-7699-4a30-b282-9e26b0218e10> <!-- DvQuantity -->
+              <data-name>Diastolic blood pressure</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <magnitude>70.00</magnitude>
+              <mlhim2:magnitude-status>=</mlhim2:magnitude-status>
+              <error>0</error>
+              <accuracy>0</accuracy>
+              <mlhim2:el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d> <!-- DvString -->
+                <data-name>mmHg</data-name>
+                <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <DvString-dv>mmHg</DvString-dv>
+                <language>en-US</language>
+              </mlhim2:el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d>
+            </mlhim2:el-c69a1ab9-7699-4a30-b282-9e26b0218e10>
+          </mlhim2:el-67c93c32-9760-495d-9030-1fec3da18e40>
+          <mlhim2:el-0e73829a-b765-4891-b388-a5ca928c8162> <!-- DvAdapter -->
+            <mlhim2:el-9da16c03-0990-4d88-85fd-28441a8458e8> <!-- DvQuantity -->
+              <data-name>Systolic blood pressure</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <magnitude>110.00</magnitude>
+              <mlhim2:magnitude-status>=</mlhim2:magnitude-status>
+              <error>0</error>
+              <accuracy>0</accuracy>
+              <mlhim2:el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d> <!-- DvString -->
+                <data-name>mmHg</data-name>
+                <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <DvString-dv>mmHg</DvString-dv>
+                <language>en-US</language>
+              </mlhim2:el-8ab419ac-df3a-4d78-a40d-7a4d9c13535d>
+            </mlhim2:el-9da16c03-0990-4d88-85fd-28441a8458e8>
+          </mlhim2:el-0e73829a-b765-4891-b388-a5ca928c8162>
+        </mlhim2:el-6fc41830-0f73-48f1-ae4c-4b730d57565b>
+        <mlhim2:el-1e854154-fa52-48e6-8999-bef8e17c05c7> <!-- Cluster -->
+          <cluster-subject>Pulse</cluster-subject>
+          <mlhim2:el-312c62aa-666b-4502-865f-3ddc2c5be85a> <!-- DvAdapter -->
+            <mlhim2:el-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4> <!-- DvBoolean -->
+              <data-name>Arrhythmia</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <valid-true>YES</valid-true>
+            </mlhim2:el-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4>
+          </mlhim2:el-312c62aa-666b-4502-865f-3ddc2c5be85a>
+          <mlhim2:el-cff7cefd-2201-4825-a80d-c26b0717c3ae> <!-- DvAdapter -->
+            <mlhim2:el-d0ad28f3-5c34-426e-b504-39f1b47d8a71> <!-- DvOrdinal -->
+              <data-name>Pulse perception</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <DvOrdinal-dv>1</DvOrdinal-dv>
+              <symbol>Accelerated</symbol>
+            </mlhim2:el-d0ad28f3-5c34-426e-b504-39f1b47d8a71>
+          </mlhim2:el-cff7cefd-2201-4825-a80d-c26b0717c3ae>
+          <mlhim2:el-5f1c355b-bdc1-4a4f-bc5d-c3b9d58fb3a5> <!-- DvAdapter -->
+            <mlhim2:el-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c> <!-- DvCount -->
+                <data-name>Pulse Rate</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <magnitude>102</magnitude>
+                <mlhim2:magnitude-status>=</mlhim2:magnitude-status>
+                <error>0</error>
+                <accuracy>0</accuracy>
+              <mlhim2:el-84f32fe2-b8eb-4666-b714-71a07901bf97> <!-- DvString -->
+                <data-name>Beats per minute</data-name>
+                <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <DvString-dv>bpm</DvString-dv>
+                <language>en-US</language>
+              </mlhim2:el-84f32fe2-b8eb-4666-b714-71a07901bf97>
+            </mlhim2:el-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c>
+          </mlhim2:el-5f1c355b-bdc1-4a4f-bc5d-c3b9d58fb3a5>
+        </mlhim2:el-1e854154-fa52-48e6-8999-bef8e17c05c7>
+        <mlhim2:el-2cf2bc6d-dfd4-43e3-b947-506aec452b35> <!-- Cluster -->
+          <cluster-subject>Skin</cluster-subject>
+          <mlhim2:el-028465a6-67a2-457a-a18a-be27bcfbc436> <!-- Cluster -->
+            <cluster-subject>Temperature</cluster-subject>
+            <mlhim2:el-98ab38e8-9d92-4b44-92cb-5ffa072d199e> <!-- DvAdapter -->
+              <mlhim2:el-f99343aa-2674-4eb7-8711-7ba531e6b60d> <!-- DvOrdinal -->
+                <data-name>Temperature</data-name>
+                <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                <DvOrdinal-dv>3</DvOrdinal-dv>
+                <symbol>Low</symbol>
+              </mlhim2:el-f99343aa-2674-4eb7-8711-7ba531e6b60d>
+            </mlhim2:el-98ab38e8-9d92-4b44-92cb-5ffa072d199e>
+            <mlhim2:el-6dbc6e00-c1a6-4421-b4d6-98edc290569f> <!-- DvAdapter -->
+              <mlhim2:el-ba8c6e7f-f217-49b4-b8ec-6b6baa438031> <!-- DvQuantity -->
+                <data-name>Temperature</data-name>
+                <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                  <magnitude>95</magnitude>
+                <mlhim2:magnitude-status>=</mlhim2:magnitude-status>
+                <error>0</error>
+                <accuracy>0</accuracy>
+                <mlhim2:el-6d9cac50-6f21-4496-a2b8-e6c184c674e3> <!-- DvString -->
+                  <data-name>UCUM Codes for Temperature Measurement Units</data-name>
+                  <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+                  <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+                  <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+                  <DvString-dv>Fahrenheit</DvString-dv>
+                  <language>en-US</language>
+                </mlhim2:el-6d9cac50-6f21-4496-a2b8-e6c184c674e3>
+              </mlhim2:el-ba8c6e7f-f217-49b4-b8ec-6b6baa438031>
+            </mlhim2:el-6dbc6e00-c1a6-4421-b4d6-98edc290569f>
+          </mlhim2:el-028465a6-67a2-457a-a18a-be27bcfbc436>
+          <mlhim2:el-8b67e76a-f3df-4c69-9976-700e63547077> <!-- DvAdapter -->
+            <mlhim2:el-6362b90a-4b2e-44e5-ad16-79704fc174d4> <!-- DvString -->
+              <data-name>Capillary refill</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <DvString-dv>Less than 2 seconds</DvString-dv>
+              <language>en-US</language>
+            </mlhim2:el-6362b90a-4b2e-44e5-ad16-79704fc174d4>
+          </mlhim2:el-8b67e76a-f3df-4c69-9976-700e63547077>
+          <mlhim2:el-aeec907a-ae3b-41c6-82d1-0ab760b20c71> <!-- DvAdapter -->
+            <mlhim2:el-201cd535-5ef9-4984-8545-99c3070a052b> <!-- DvString -->
+              <data-name>Moist</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <DvString-dv>Dry</DvString-dv>
+              <language>en-US</language>
+            </mlhim2:el-201cd535-5ef9-4984-8545-99c3070a052b>
+          </mlhim2:el-aeec907a-ae3b-41c6-82d1-0ab760b20c71>
+          <mlhim2:el-a38946bf-83d9-477e-9ca8-0bc0a2f47dbb> <!-- DvAdapter -->
+            <mlhim2:el-bd532d61-455f-45f4-bb02-aaa86f60e4a2> <!-- DvString -->
+              <data-name>Skin Color</data-name>
+              <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+              <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+              <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+              <DvString-dv>Pale</DvString-dv>
+              <language>en-US</language>
+            </mlhim2:el-bd532d61-455f-45f4-bb02-aaa86f60e4a2>
+          </mlhim2:el-a38946bf-83d9-477e-9ca8-0bc0a2f47dbb>
+        </mlhim2:el-2cf2bc6d-dfd4-43e3-b947-506aec452b35>
+        <mlhim2:el-214413d9-1516-4f31-bc60-dc92f9c9142a> <!-- DvAdapter -->
+          <mlhim2:el-bd20c87c-c890-4a85-9e79-038ba64a5a92> <!-- DvString -->
+            <data-name>Bleeding</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Capillary</DvString-dv>
+            <language>en-US</language>
+          </mlhim2:el-bd20c87c-c890-4a85-9e79-038ba64a5a92>
+        </mlhim2:el-214413d9-1516-4f31-bc60-dc92f9c9142a>
+      </mlhim2:el-5d546138-6707-4d5c-8a30-8d13f6669c55>
+      <mlhim2:el-51cc78ed-08ca-4b35-a090-47428ed0b1eb> <!-- Cluster -->
+        <cluster-subject>Disability</cluster-subject>
+        <mlhim2:el-b426e0fc-0bd5-4a6f-8bab-96e2eed3566f> <!-- DvAdapter -->
+          <mlhim2:el-aba94abf-32e8-4fd1-950a-d518be67dde0> <!-- DvOrdinal -->
+            <data-name>Glasgow Coma Scale: Eye</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvOrdinal-dv>2</DvOrdinal-dv>
+            <symbol>Opens eyes in response to painful stimuli</symbol>
+          </mlhim2:el-aba94abf-32e8-4fd1-950a-d518be67dde0>
+        </mlhim2:el-b426e0fc-0bd5-4a6f-8bab-96e2eed3566f>
+        <mlhim2:el-09588b36-1f92-47fe-a2fd-0f010cf90501> <!-- DvAdapter -->
+          <mlhim2:el-73b01305-a24c-4bca-a426-24ea8f13c289> <!-- DvOrdinal -->
+            <data-name>Glasgow Coma Scale: Final result</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvOrdinal-dv>14</DvOrdinal-dv>
+            <symbol>14</symbol>
+          </mlhim2:el-73b01305-a24c-4bca-a426-24ea8f13c289>
+        </mlhim2:el-09588b36-1f92-47fe-a2fd-0f010cf90501>
+        <mlhim2:el-6a0f70c3-58af-430a-b24b-121930cffaa3> <!-- DvAdapter -->
+          <mlhim2:el-1f487ce1-4f52-4768-a251-0cae83212490> <!-- DvOrdinal -->
+            <data-name>Glasgow Coma Scale: Motor</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvOrdinal-dv>6</DvOrdinal-dv>
+            <symbol>Obeys commands</symbol>
+          </mlhim2:el-1f487ce1-4f52-4768-a251-0cae83212490>
+        </mlhim2:el-6a0f70c3-58af-430a-b24b-121930cffaa3>
+        <mlhim2:el-7012d7f4-042c-429c-9f7e-7b8c2839fd2a> <!-- DvAdapter -->
+          <mlhim2:el-d018467a-dfd7-4108-a54a-50ed12617b9d> <!-- DvOrdinal -->
+            <data-name>Glasgow Coma Scale: Verbal</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvOrdinal-dv>5</DvOrdinal-dv>
+            <symbol>Oriented, converses normally</symbol>
+          </mlhim2:el-d018467a-dfd7-4108-a54a-50ed12617b9d>
+        </mlhim2:el-7012d7f4-042c-429c-9f7e-7b8c2839fd2a>
+      </mlhim2:el-51cc78ed-08ca-4b35-a090-47428ed0b1eb>
+      <mlhim2:el-7f183683-e2c7-4c3d-b21a-03a08448dab8> <!-- DvAdapter -->
+        <mlhim2:el-ee07e689-514b-4f87-bf5f-2350dd284efb> <!-- DvBoolean -->
+          <data-name>Airway obstruction</data-name>
+          <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+          <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+          <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+          <valid-true>NO</valid-true>
+        </mlhim2:el-ee07e689-514b-4f87-bf5f-2350dd284efb>
+      </mlhim2:el-7f183683-e2c7-4c3d-b21a-03a08448dab8>
+      <mlhim2:el-d9dda3b5-784f-42cf-a98b-64b2241dc82b> <!-- DvAdapter -->
+        <mlhim2:el-58f45fc2-4cf2-4a12-91a9-24e0decdaf39> <!-- DvString -->
+          <data-name>Exposure</data-name>
+          <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+          <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+          <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+          <DvString-dv></DvString-dv>
+          <language>en-US</language>
+        </mlhim2:el-58f45fc2-4cf2-4a12-91a9-24e0decdaf39>
+      </mlhim2:el-d9dda3b5-784f-42cf-a98b-64b2241dc82b>
+      
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Apneic</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-51f0cf8a-96b8-4b4e-a026-df1591b42b2a</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Respiratory Rate</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-ab72c7d9-843b-47ce-883a-f6da2e6c5a80</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Diastolic blood pressure</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv> el-c69a1ab9-7699-4a30-b282-9e26b0218e10</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Systolic blood pressure</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-9da16c03-0990-4d88-85fd-28441a8458e8</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> 
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Arrhythmia</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-1f1c43dc-f0ac-4de5-baa2-c7938e6181e4</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Pulse perception</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-d0ad28f3-5c34-426e-b504-39f1b47d8a71</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Pulse Rate</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-a38f9893-c8cb-4ff3-8509-0ed0a475dd6c</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Temperature</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-f99343aa-2674-4eb7-8711-7ba531e6b60d</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Temperature - Fahrenheit</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-ba8c6e7f-f217-49b4-b8ec-6b6baa438031</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Capillary refill</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-6362b90a-4b2e-44e5-ad16-79704fc174d4</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Moist</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-201cd535-5ef9-4984-8545-99c3070a052b</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Skin Color</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-bd532d61-455f-45f4-bb02-aaa86f60e4a2</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Bleeding</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-bd20c87c-c890-4a85-9e79-038ba64a5a92</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Glasgow Coma Scale: Eye</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-aba94abf-32e8-4fd1-950a-d518be67dde0</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Glasgow Coma Scale: Final result</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-73b01305-a24c-4bca-a426-24ea8f13c289</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv> Glasgow Coma Scale: Motor</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-1f487ce1-4f52-4768-a251-0cae83212490</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>  
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv> Glasgow Coma Scale: Verbal</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-d018467a-dfd7-4108-a54a-50ed12617b9d</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Airway obstruction</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-ee07e689-514b-4f87-bf5f-2350dd284efb</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+      <mlhim2:el-9047320a-b279-49c3-914c-082103780f3f> <!-- Cluster -->
+        <cluster-subject>HL7/MLHIM Mapping</cluster-subject>
+        <mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f> <!-- DvAdapter -->
+          <mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3> <!-- DvString -->
+            <data-name>OBX segment of the HL7 message</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>Exposure</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-4e0c2b62-3097-4050-85ae-58af8e57fcb3>
+        </mlhim2:el-f9720751-951c-4575-9c21-601b66c4361f>
+        <mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526> <!-- DvAdapter -->
+          <mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea> <!-- DvString -->
+            <data-name>UUID of the MLHIM CCD PcT</data-name>
+            <!-- Use any subtype of ExceptionalValue here when a value is missing-->
+            <valid-time-begin>2014-08-30T09:31:12</valid-time-begin> 
+            <valid-time-end>2030-31-12T23:59:59</valid-time-end>
+            <DvString-dv>el-58f45fc2-4cf2-4a12-91a9-24e0decdaf39</DvString-dv>
+            <language>pt-BR</language>
+          </mlhim2:el-16a46968-7d3a-4018-be6f-f92c444105ea>
+        </mlhim2:el-0fd46bea-98b1-4ff9-8dde-224952405526>
+      </mlhim2:el-9047320a-b279-49c3-914c-082103780f3f>
+
+        
+    </mlhim2:el-e2d44d11-1841-4f3a-84b5-4f660fc14f89>
+  </mlhim2:el-f4d9b375-a230-4904-9a56-2079f1c11540>
+</mlhim2:ccd-a50f1c17-93a6-44b0-9cd7-a1b0778c7faf>
