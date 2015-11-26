@@ -1,0 +1,15 @@
+Package: ccdEvaluationofHypovolemicShockinChildrenforPALS0e49d26c8cd7
+Type: Package
+Title: ccdEvaluationofHypovolemicShockinChildrenforPALS0e49d26c8cd7
+Version: 1.0
+Date: 2015-11-26
+Author: Timothy W. Cook <tim@mlhim.org>
+Maintainer: Timothy W. Cook <tim@mlhim.org>
+Description: Creates a data frame from instances of the MLHIM CCD for:
+  Evaluation of Hypovolemic Shock in Children for PALS
+  The CCD ID is: ccd-6ae55d46-7f07-400f-b43b-0e49d26c8cd7
+  Evaluation of Hypovolemic Shock in Children for the Pediatric Advanced Life Support guideline
+License: Apache License 2.0
+Depends: 
+  mlhim250rm (>= 1.0.0),
+  data.table

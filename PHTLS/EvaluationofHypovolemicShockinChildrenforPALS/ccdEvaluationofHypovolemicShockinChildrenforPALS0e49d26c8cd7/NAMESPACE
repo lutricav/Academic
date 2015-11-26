@@ -1,0 +1,8 @@
+export(getPatientsDateofBirth)
+export(getSystolicBloodPressure)
+export(getPatient)
+export(getProvider)
+export(getHeartRate)
+export(getGenderofaPerson)
+export(getHeartRateClassificationforPALS)
+export(getSystolicBloodPressureClassificationforPALS)
